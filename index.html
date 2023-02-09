@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/main.js" defer></script>
+<title>API</title>
+</head>
+<body>
+    <header class="header"> 
+        <ul>
+            <li><h5>F1 Racer API Data </h5></li>
+        </ul>
+    </header>
+    <div class="container">
+    <div class="row form">
+        <form name="find" id="findForm">
+            <label for="season">season</label>
+            <input type="number" name="season" id="season">
+            <label for="round">round</label>
+                <input type="number" name="round" id="round">
+            <button type="submit" id="submitButton" onclick="load_data()"><b>find</b></button>
+        </form>
+    </div>
+    <div class = "row">
+        <h1 class="text-center">API</h1>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Position</th>
+                <th>points</th>
+                <th>Wins</th>
+                <th>Name</th>
+                <th>Date of birth</th>
+                <th>sponsor</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
